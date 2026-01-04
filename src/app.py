@@ -78,9 +78,16 @@ activities = {
 }
 
 
+
 @app.get("/")
 def root():
     return RedirectResponse(url="/static/index.html")
+
+
+# Route for resume builder page
+@app.get("/resume-builder")
+def resume_builder():
+    return RedirectResponse(url="/static/resume_builder.html")
 
 
 @app.get("/activities")

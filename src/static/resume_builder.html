@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume & Cover Letter Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Resume & Cover Letter Builder</h1>
+    <form id="resumeForm">
+        <label>Name: <input type="text" name="name" required></label><br>
+        <label>Email: <input type="email" name="email" required></label><br>
+        <label>Education: <textarea name="education" required></textarea></label><br>
+        <label>Experience: <textarea name="experience" required></textarea></label><br>
+        <label>Skills: <textarea name="skills" required></textarea></label><br>
+        <label>Cover Letter: <textarea name="cover_letter" required></textarea></label><br>
+        <button type="submit">Generate Resume</button>
+    </form>
+    <div id="output" style="margin-top:2em;"></div>
+    <script src="resume_builder.js"></script>
+</body>
+</html>
